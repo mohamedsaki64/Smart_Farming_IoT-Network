@@ -1,0 +1,1531 @@
+[
+    {
+        "id": "a48e96e73e0d8ced",
+        "type": "tab",
+        "label": "Flow 8",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "85a318d3b559aefb",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Main Temperature",
+        "topic": "agrosense_f5d65f65sd56/main/temperature",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "cca0dbca847f551e",
+                "61f965f723d465b1"
+            ]
+        ]
+    },
+    {
+        "id": "7ffff95b13dcc3ae",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Main Humidity",
+        "topic": "agrosense_f5d65f65sd56/main/humidity",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "4abba748cb83bb7f"
+            ]
+        ]
+    },
+    {
+        "id": "2926e13bfaf6f2f5",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Main Light",
+        "topic": "agrosense_f5d65f65sd56/main/light",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "b7a983411e3c5807"
+            ]
+        ]
+    },
+    {
+        "id": "97e472422101e6d7",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Main Soil Moisture",
+        "topic": "agrosense_f5d65f65sd56/main/soil_moisture",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 190,
+        "y": 340,
+        "wires": [
+            [
+                "9ad60c4001738a68",
+                "1be0e865cd73c32d"
+            ]
+        ]
+    },
+    {
+        "id": "debf81c7e6fe9d44",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Main Rain Status",
+        "topic": "agrosense_f5d65f65sd56/main/rain",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 200,
+        "y": 440,
+        "wires": [
+            [
+                "4956939e144dfa41",
+                "1be0e865cd73c32d"
+            ]
+        ]
+    },
+    {
+        "id": "97b8acaffca6a23f",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Main Valve Status",
+        "topic": "agrosense_f5d65f65sd56/main/valve_status",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 190,
+        "y": 500,
+        "wires": [
+            [
+                "cf5319e7acd97a33"
+            ]
+        ]
+    },
+    {
+        "id": "0661f706cec4be5f",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Temperature",
+        "topic": "agrosense_f5d65f65sd56/remote/temperature",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 180,
+        "y": 560,
+        "wires": [
+            [
+                "86d93ddbc35af5d2",
+                "47f3b7f8c715a164"
+            ]
+        ]
+    },
+    {
+        "id": "07895fe28250666f",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Humidity",
+        "topic": "agrosense_f5d65f65sd56/remote/humidity",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 200,
+        "y": 620,
+        "wires": [
+            [
+                "2d74e1db6cbaabfd",
+                "72bda19662cb9bda"
+            ]
+        ]
+    },
+    {
+        "id": "38a6d260cfffd84c",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Soil Moisture",
+        "topic": "agrosense_f5d65f65sd56/remote/soil_moisture",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 180,
+        "y": 740,
+        "wires": [
+            [
+                "e5266b4eace9b9a7",
+                "0210cc769232e10e",
+                "9973a60bb54a5b9e"
+            ]
+        ]
+    },
+    {
+        "id": "bfeb82f19a95a4a2",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Valve Status",
+        "topic": "agrosense_f5d65f65sd56/remote/valve_status",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 730,
+        "y": 640,
+        "wires": [
+            [
+                "4f641d74df7f4871"
+            ]
+        ]
+    },
+    {
+        "id": "9242bcfd67358113",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Light",
+        "topic": "agrosense_f5d65f65sd56/remote/light",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 210,
+        "y": 680,
+        "wires": [
+            [
+                "42eb9cc6d3760352",
+                "0210cc769232e10e",
+                "1cae9d4a269df1a8"
+            ]
+        ]
+    },
+    {
+        "id": "55d752a3109abb22",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Rain Status",
+        "topic": "agrosense_f5d65f65sd56/remote/rain",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 190,
+        "y": 800,
+        "wires": [
+            [
+                "c0a2182e9c8fbeab",
+                "0210cc769232e10e",
+                "f4dcc6fb2b6430dc"
+            ]
+        ]
+    },
+    {
+        "id": "cca0dbca847f551e",
+        "type": "ui_gauge",
+        "z": "a48e96e73e0d8ced",
+        "name": "Temperature",
+        "group": "main_sensors_group",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Temperature (°C)",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "50",
+        "colors": [
+            "#0080ff",
+            "#40bf40",
+            "#ff4000"
+        ],
+        "seg1": "15",
+        "seg2": "35",
+        "x": 410,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4abba748cb83bb7f",
+        "type": "ui_gauge",
+        "z": "a48e96e73e0d8ced",
+        "name": "Humidity",
+        "group": "main_sensors_group",
+        "order": 2,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Humidity (%)",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#ff4040",
+            "#40bf40",
+            "#4080ff"
+        ],
+        "seg1": "30",
+        "seg2": "70",
+        "x": 400,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b7a983411e3c5807",
+        "type": "ui_gauge",
+        "z": "a48e96e73e0d8ced",
+        "name": "Light Level",
+        "group": "main_sensors_group",
+        "order": 3,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Light Level",
+        "label": "lux",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#404040",
+            "#ffff40",
+            "#ff8000"
+        ],
+        "seg1": "20",
+        "seg2": "80",
+        "diff": false,
+        "className": "",
+        "x": 410,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9ad60c4001738a68",
+        "type": "ui_gauge",
+        "z": "a48e96e73e0d8ced",
+        "name": "Soil Moisture",
+        "group": "main_sensors_group",
+        "order": 4,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Soil Moisture (%)",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#ff4040",
+            "#ffff40",
+            "#4080ff"
+        ],
+        "seg1": "30",
+        "seg2": "70",
+        "x": 410,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4956939e144dfa41",
+        "type": "ui_text",
+        "z": "a48e96e73e0d8ced",
+        "group": "main_sensors_group",
+        "order": 5,
+        "width": 5,
+        "height": 2,
+        "name": "Rain Status",
+        "label": "Rain Status",
+        "format": "<div style='text-align:center; font-size:16px; color:{{msg.payload ? '#4080ff' : '#666'}}'><i class='fa fa-{{msg.payload ? 'tint' : 'sun-o'}} fa-lg'></i><br>{{msg.payload ? 'RAINING' : 'DRY'}}</div>",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 410,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "cf5319e7acd97a33",
+        "type": "ui_text",
+        "z": "a48e96e73e0d8ced",
+        "group": "main_irrigation_group",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "name": "Main Valve Status",
+        "format": "<div style='text-align:center; font-size:20px; padding:10px; background-color:{{msg.payload ? '#4CAF50' : '#f44336'}}; color:white; border-radius:8px;'><i class='fa fa-{{msg.payload ? 'tint' : 'stop'}} fa-lg'></i><br><strong>{{msg.payload ? 'WATERING ACTIVE' : 'WATERING OFF'}}</strong></div>",
+        "layout": "row-spread",
+        "x": 430,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "86d93ddbc35af5d2",
+        "type": "ui_gauge",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Temperature",
+        "group": "remote_sensors_group",
+        "order": 1,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Temperature (°C)",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "50",
+        "colors": [
+            "#0080ff",
+            "#40bf40",
+            "#ff4000"
+        ],
+        "seg1": "15",
+        "seg2": "35",
+        "x": 440,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2d74e1db6cbaabfd",
+        "type": "ui_gauge",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Humidity",
+        "group": "remote_sensors_group",
+        "order": 2,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Humidity (%)",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#ff4040",
+            "#40bf40",
+            "#4080ff"
+        ],
+        "seg1": "30",
+        "seg2": "70",
+        "x": 430,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "e5266b4eace9b9a7",
+        "type": "ui_gauge",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Soil Moisture",
+        "group": "remote_sensors_group",
+        "order": 4,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Soil Moisture (%)",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#ff4040",
+            "#ffff40",
+            "#4080ff"
+        ],
+        "seg1": "30",
+        "seg2": "70",
+        "x": 500,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "42eb9cc6d3760352",
+        "type": "ui_gauge",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Light Level",
+        "group": "remote_sensors_group",
+        "order": 5,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Light Level",
+        "label": "lux",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#404040",
+            "#ffff40",
+            "#ff8000"
+        ],
+        "seg1": "20",
+        "seg2": "80",
+        "diff": false,
+        "className": "",
+        "x": 430,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "c0a2182e9c8fbeab",
+        "type": "ui_text",
+        "z": "a48e96e73e0d8ced",
+        "group": "remote_sensors_group",
+        "order": 6,
+        "width": 12,
+        "height": 2,
+        "name": "Remote Rain Status",
+        "label": "",
+        "format": "<div style='text-align:center; font-size:16px; color:{{msg.payload ? '#4080ff' : '#666'}}'><i class='fa fa-{{msg.payload ? 'tint' : 'sun-o'}} fa-lg'></i><br>{{msg.payload>10 ? 'RAINING' : 'DRY'}}</div>",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 500,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "4f641d74df7f4871",
+        "type": "ui_text",
+        "z": "a48e96e73e0d8ced",
+        "group": "85e624c30af964f4",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "name": "Remote Valve Status",
+        "label": "",
+        "format": "<div style='text-align:center; font-size:20px; padding:10px; background-color:{{msg.payload == 1 ? '#4CAF50' : '#f44336'}}; color:white; border-radius:8px;'><i class='fa fa-{{msg.payload == 1 ? 'tint' : 'stop'}} fa-lg'></i><br><strong>{{msg.payload ==1 ? 'WATERING ACTIVE' : 'WATERING OFF'}}</strong></div>",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1000,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "91487d6078b73620",
+        "type": "ui_switch",
+        "z": "a48e96e73e0d8ced",
+        "name": "Manual Valve Control",
+        "label": "Manual Irrigation Override",
+        "tooltip": "Toggle to manually control main farm irrigation",
+        "group": "control_main_group",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "topic": "agrosense/main/command/valve",
+        "x": 180,
+        "y": 880,
+        "wires": [
+            [
+                "29c431fa914d3d5c"
+            ]
+        ]
+    },
+    {
+        "id": "cdf9880a226f13b4",
+        "type": "ui_switch",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Manual Valve Control",
+        "label": "Manual Irrigation Override",
+        "tooltip": "Toggle to manually control remote field irrigation",
+        "group": "control_remote_group",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "agrosense_f5d65f65sd5/remote/command/valve",
+        "topicType": "str",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 150,
+        "y": 920,
+        "wires": [
+            [
+                "a76e8e86ec612589",
+                "90a001bfec069920"
+            ]
+        ]
+    },
+    {
+        "id": "a1c3278b74a3efef",
+        "type": "ui_slider",
+        "z": "a48e96e73e0d8ced",
+        "name": "Main Soil Threshold",
+        "label": "Main Farm Soil Moisture Threshold (%)",
+        "tooltip": "Set the soil moisture level that triggers automatic watering",
+        "group": "control_settings_group",
+        "order": 1,
+        "width": 9,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "agrosense/main/config/soil_threshold",
+        "topicType": "str",
+        "min": "0",
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 190,
+        "y": 960,
+        "wires": [
+            [
+                "0fda11db76aa0eb6"
+            ]
+        ]
+    },
+    {
+        "id": "2db2fbd464deda1e",
+        "type": "ui_slider",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Soil Threshold",
+        "label": "Remote Field Soil Moisture Threshold (%)",
+        "tooltip": "Set the soil moisture level that triggers automatic watering for remote field",
+        "group": "control_settings_group",
+        "order": 2,
+        "width": 9,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "agrosense_f5d65f65sd5/remote/config/soil_threshold",
+        "topicType": "str",
+        "min": "0",
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 180,
+        "y": 1000,
+        "wires": [
+            [
+                "d4487f4d87f65c7b"
+            ]
+        ]
+    },
+    {
+        "id": "f9662e7cdb2331de",
+        "type": "ui_dropdown",
+        "z": "a48e96e73e0d8ced",
+        "name": "System Mode",
+        "label": "System Operation Mode",
+        "tooltip": "Select automatic or manual operation mode",
+        "place": "left",
+        "group": "control_settings_group",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "options": [
+            {
+                "label": "Automatic",
+                "value": "auto",
+                "type": "str"
+            },
+            {
+                "label": "Manual Only",
+                "value": "manual",
+                "type": "str"
+            },
+            {
+                "label": "Emergency Stop",
+                "value": "emergency",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "agrosense/system/mode",
+        "x": 200,
+        "y": 1040,
+        "wires": [
+            [
+                "27b323454ec99fbd"
+            ]
+        ]
+    },
+    {
+        "id": "8eea6d3f43bf628d",
+        "type": "ui_template",
+        "z": "a48e96e73e0d8ced",
+        "group": "main_overview_group",
+        "name": "System Status",
+        "order": 2,
+        "width": 12,
+        "height": 8,
+        "format": "<div\n  style='padding:12px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius:8px; color:white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); max-height:100%; overflow:hidden;'>\n  <div style='display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px;'>\n    <div style='flex:1; min-width:0;'>\n      <div style='display:flex; align-items:center; gap:8px;'>\n        <i class='fa fa-leaf' style='font-size:18px;'></i>\n        <div style='font-size:18px; font-weight:bold; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;'>\n          AgroSense Smart Farm</div>\n      </div>\n      <div\n        style='font-size:12px; opacity:0.9; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;'>\n        Real-time Agricultural Monitoring System</div>\n    </div>\n  </div>\n\n  <div style='display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; margin-bottom:12px;'>\n    <!-- Connection Status -->\n    <div style='background:rgba(255,255,255,0.1); padding:10px; border-radius:6px; text-align:center;'>\n      <i class='fa fa-wifi fa-lg' style='color:{{msg.connection_status === \"Online\" ? \"#4CAF50\" : \"#f44336\"}};'></i>\n      <div style='margin-top:5px; font-weight:bold; font-size:14px;'>Connection</div>\n      <div style='font-size:12px; opacity:0.9;'>{{msg.connection_status || 'Offline'}}</div>\n      <div\n        style='font-size:11px; margin-top:3px; color:{{msg.connection_status === \"Online\" ? \"#4CAF50\" : \"#f44336\"}};'>\n        Signal: {{msg.signal_strength || 'Excellent'}}</div>\n    </div>\n\n    <!-- Active Fields Section -->\n    <div style='background:rgba(255,255,255,0.1); padding:10px; border-radius:6px; text-align:center;'>\n      <i class='fa fa-map-marker fa-lg' style='color:#FF9800;'></i>\n      <div style='margin-top:5px; font-weight:bold; font-size:14px;'>Active Fields</div>\n      <div style='font-size:12px; opacity:0.9;'>{{msg.active_fields || '2 Fields'}}</div>\n      <div style='font-size:11px; margin-top:3px; color:#FF9800;'>All Systems OK</div>\n    </div>\n\n    <!-- Irrigation Section -->\n    <div\n      style='background:linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.15) 100%); padding:12px; border-radius:8px; text-align:center; position:relative; overflow:hidden;'>\n      <div\n        style='position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(to right, transparent, {{msg.irrigation_active ? \"#2196F3\" : \"#9E9E9E\"}}, transparent);'>\n      </div>\n\n      <div style='display:flex; flex-direction:column; align-items:center; gap:8px;'>\n        <div\n          style='background:rgba(255,255,255,0.1); border-radius:50%; width:40px; height:40px; display:flex; align-items:center; justify-content:center;'>\n          <i class='fa fa-{{msg.irrigation_active ? \"tint\" : \"pause\"}} fa-lg' style='color:{{msg.irrigation_active ? \"#2196F3\" : \"#9E9E9E\"}}; font-size:20px;'></i>\n        </div>\n\n        <div>\n          <div style='font-weight:bold; font-size:16px; margin-bottom:4px;'>Irrigation</div>\n          <div style='font-size:14px; opacity:0.9; color:{{msg.irrigation_active ? \"#2196F3\" : \"#9E9E9E\"}};'>\n            {{msg.irrigation_active ? 'Active' : 'Standby'}}</div>\n        </div>\n\n        <div style='width:100%; height:2px; background:rgba(255,255,255,0.1); margin:4px 0;'>\n          <div\n            style='width:{{msg.irrigation_active ? \"75\" : \"0\"}}%; height:100%; background:{{msg.irrigation_active ? \"#2196F3\" : \"#9E9E9E\"}}; transition:width 0.5s ease;'>\n          </div>\n        </div>\n\n        <div\n          style='font-size:11px; color:{{msg.irrigation_active ? \"#81D4FA\" : \"#9E9E9E\"}}; display:flex; align-items:center; gap:4px;'>\n          <i class='fa fa-info-circle'></i>\n          {{msg.irrigation_active ? \"Water optimization active\" : \"System ready\"}}\n        </div>\n      </div>\n\n      <div\n        style='position:absolute; bottom:0; left:0; right:0; height:2px; background:linear-gradient(to right, transparent, {{msg.irrigation_active ? \"#2196F3\" : \"#9E9E9E\"}}, transparent);'>\n      </div>\n    </div>\n  </div>\n\n  <!-- Real-Time Date and Time Section -->\n  <div style='background:rgba(255,255,255,0.15); padding:10px; border-radius:6px;'>\n    <div style='display:flex; justify-content:space-between; align-items:center;'>\n      <div>\n        <div style='font-weight:bold; font-size:14px;'><i class='fa fa-clock'></i> Real-Time Date and Time</div>\n        <div style='font-size:12px; margin-top:3px;'>{{msg.timestamp || 'Loading...'}}</div>\n      </div>\n    </div>\n  </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c7c0b76ca16f619",
+        "type": "ui_template",
+        "z": "a48e96e73e0d8ced",
+        "group": "remote_overview_group",
+        "name": "Remote Field Status",
+        "order": 1,
+        "width": 12,
+        "height": 2,
+        "format": "<div\n    style='padding:15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius:12px; color:white; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>\n    <div style='display:flex; justify-content:space-between; align-items:center;'>\n        <div>\n            <h3 style='margin:0; font-size:20px;'><i class='fa fa-map-marker'></i> Remote Field Station</h3>\n            <p style='margin:5px 0 0 0; opacity:0.9;'>LoRa Connected - Field B</p>\n        </div>\n        <div style='display:flex; gap:20px; text-align:center;'>\n            <div>\n                <div style='font-size:12px; opacity:0.8;'>Signal Strength</div>\n                <div style='font-size:16px; font-weight:bold;'><i class='fa fa-signal'></i> {{msg.signal_strength ||\n                    'Strong'}}</div>\n            </div>\n            <div>\n                <div style='font-size:12px; opacity:0.8;'>Distance</div>\n                <div style='font-size:16px; font-weight:bold;'>{{msg.distance || '2.5 km'}}</div>\n            </div>\n        </div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 700,
+        "y": 420,
+        "wires": [
+            [
+                "29c431fa914d3d5c"
+            ]
+        ]
+    },
+    {
+        "id": "29c431fa914d3d5c",
+        "type": "mqtt out",
+        "z": "a48e96e73e0d8ced",
+        "name": "Main Valve Command",
+        "topic": "agrosense_f5d65f65sd56/main/command/valve",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f5a0a27d4c4c8541",
+        "x": 1040,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "a76e8e86ec612589",
+        "type": "mqtt out",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Valve Command",
+        "topic": "agrosense_f5d65f65sd56/remote/command/valve",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f5a0a27d4c4c8541",
+        "x": 730,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "0fda11db76aa0eb6",
+        "type": "mqtt out",
+        "z": "a48e96e73e0d8ced",
+        "name": "Main Threshold Setting",
+        "topic": "agrosense_f5d65f65sd56/main/config/soil_threshold",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f5a0a27d4c4c8541",
+        "x": 730,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "d4487f4d87f65c7b",
+        "type": "mqtt out",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Threshold Setting",
+        "topic": "agrosense_f5d65f65sd56/remote/config/soil_threshold",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f5a0a27d4c4c8541",
+        "x": 730,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "27b323454ec99fbd",
+        "type": "mqtt out",
+        "z": "a48e96e73e0d8ced",
+        "name": "System Mode Setting",
+        "topic": "agrosense_f5d65f65sd56/system/mode",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f5a0a27d4c4c8541",
+        "x": 480,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "1be0e865cd73c32d",
+        "type": "function",
+        "z": "a48e96e73e0d8ced",
+        "name": "Main Irrigation Logic",
+        "func": "// Get current soil moisture and rain status\nvar soilMoisture = parseFloat(msg.payload);\nvar rainStatus = flow.get('main_rain_status') || false;\nvar soilThreshold = flow.get('main_soil_threshold') || 40;\nvar systemMode = flow.get('system_mode') || 'auto';\nvar manualOverride = flow.get('main_manual_override') || false;\n\n// Store current soil moisture\nflow.set('main_soil_moisture', soilMoisture);\n\nvar shouldWater = false;\nvar reason = '';\n\nif (systemMode === 'emergency') {\n    shouldWater = false;\n    reason = 'Emergency stop activated';\n} else if (systemMode === 'manual' || manualOverride) {\n    shouldWater = flow.get('main_manual_valve_state') || false;\n    reason = 'Manual override active';\n} else if (systemMode === 'auto') {\n    if (rainStatus) {\n        shouldWater = false;\n        reason = 'Rain detected - automatic watering disabled';\n    } else if (soilMoisture < soilThreshold) {\n        shouldWater = true;\n        reason = `Soil moisture (${soilMoisture}%) below threshold (${soilThreshold}%)`;\n    } else {\n        shouldWater = false;\n        reason = `Soil moisture (${soilMoisture}%) above threshold (${soilThreshold}%)`;\n    }\n}\n\n// Store irrigation decision\nflow.set('main_irrigation_active', shouldWater);\n\n// Create status message\nvar statusMsg = {\n    payload: shouldWater,\n    topic: 'agrosense/main/valve_status',\n    timestamp: new Date().toISOString(),\n    soil_moisture: soilMoisture,\n    threshold: soilThreshold,\n    rain_status: rainStatus,\n    reason: reason,\n    mode: systemMode\n};\n\nreturn statusMsg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "737ec9a8abeab0de",
+                "4c7c0b76ca16f619"
+            ]
+        ]
+    },
+    {
+        "id": "0210cc769232e10e",
+        "type": "function",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Irrigation Logic",
+        "func": "// Get current soil moisture for remote field\nvar soilMoisture = parseFloat(msg.payload);\nvar soilThreshold = flow.get('remote_soil_threshold') || 40;\nvar systemMode = flow.get('system_mode') || 'auto';\nvar manualOverride = flow.get('remote_manual_override') || false;\n\n// Store current soil moisture\nflow.set('remote_soil_moisture', soilMoisture);\n\nvar shouldWater = false;\nvar reason = '';\n\nif (systemMode === 'emergency') {\n    shouldWater = false;\n    reason = 'Emergency stop activated';\n} else if (systemMode === 'manual' || manualOverride) {\n    shouldWater = flow.get('remote_manual_valve_state') || false;\n    reason = 'Manual override active';\n} else if (systemMode === 'auto') {\n    if (soilMoisture < soilThreshold) {\n        shouldWater = true;\n        reason = `Remote soil moisture (${soilMoisture}%) below threshold (${soilThreshold}%)`;\n    } else {\n        shouldWater = false;\n        reason = `Remote soil moisture (${soilMoisture}%) above threshold (${soilThreshold}%)`;\n    }\n}\n\n// Store irrigation decision\nflow.set('remote_irrigation_active', shouldWater);\n\n// Create status message\nvar statusMsg = {\n    payload: shouldWater,\n    topic: 'agrosense/remote/valve_status',\n    timestamp: new Date().toISOString(),\n    soil_moisture: soilMoisture,\n    threshold: soilThreshold,\n    reason: reason,\n    mode: systemMode\n};\n\nreturn statusMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 510,
+        "y": 740,
+        "wires": [
+            [
+                "a76e8e86ec612589"
+            ]
+        ]
+    },
+    {
+        "id": "61f965f723d465b1",
+        "type": "function",
+        "z": "a48e96e73e0d8ced",
+        "name": "System Status Aggregator",
+        "func": "// Aggregate system status information\nvar mainTemp = parseFloat(msg.payload);\nvar timestamp = new Date().toLocaleString();\n\n// Get stored values\nvar mainIrrigationActive = flow.get('main_irrigation_active') || false;\nvar remoteIrrigationActive = flow.get('remote_irrigation_active') || false;\nvar rainStatus = flow.get('main_rain_status') || false;\nvar activeFields = 2; // Main + Remote\n\n// Determine overall irrigation status\nvar irrigationActive = mainIrrigationActive || remoteIrrigationActive;\n\n// Determine weather status\nvar weather = rainStatus ? 'rain' : 'clear';\n\n// Create comprehensive status message\nvar statusMsg = {\n    payload: {\n        timestamp: timestamp,\n        connection_status: 'Online',\n        active_fields: activeFields + ' Fields',\n        irrigation_active: irrigationActive,\n        weather: weather,\n        main_temp: mainTemp\n    },\n    timestamp: timestamp,\n    connection_status: 'Online',\n    active_fields: activeFields + ' Fields',\n    irrigation_active: irrigationActive,\n    weather: weather\n};\n\nreturn statusMsg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 20,
+        "wires": [
+            [
+                "8eea6d3f43bf628d"
+            ]
+        ]
+    },
+    {
+        "id": "737ec9a8abeab0de",
+        "type": "ui_template",
+        "z": "a48e96e73e0d8ced",
+        "group": "main_irrigation_group",
+        "name": "Irrigation Decision Display",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "format": "<div style='padding:15px; background:{{msg.payload ? \"linear-gradient(135deg, #4CAF50, #45a049)\" : \"linear-gradient(135deg, #f44336, #d32f2f)\"}}; border-radius:10px; color:white; box-shadow: 0 3px 6px rgba(0,0,0,0.2);'>\n  <div style='text-align:center; margin-bottom:10px;'>\n    <i class='fa fa-{{msg.payload ? \"tint\" : \"stop\"}} fa-2x'></i>\n    <h3 style='margin:10px 0 5px 0;'>{{msg.payload ? \"IRRIGATION ACTIVE\" : \"IRRIGATION OFF\"}}</h3>\n  </div>\n  \n  <div style='background:rgba(255,255,255,0.1); padding:10px; border-radius:5px; font-size:12px;'>\n    <div style='margin-bottom:5px;'><strong>Decision:</strong> {{msg.reason}}</div>\n    <div style='margin-bottom:5px;'><strong>Soil Level:</strong> {{msg.soil_moisture}}%</div>\n    <div style='margin-bottom:5px;'><strong>Threshold:</strong> {{msg.threshold}}%</div>\n    <div><strong>Mode:</strong> {{msg.mode | uppercase}}</div>\n  </div>\n  \n  <div style='text-align:center; margin-top:10px; font-size:11px; opacity:0.8;'>\n    Last Update: {{msg.timestamp | date:'HH:mm:ss'}}\n  </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 710,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a37691f2a11cc566",
+        "type": "ui_button",
+        "z": "a48e96e73e0d8ced",
+        "name": "Emergency Stop",
+        "group": "control_settings_group",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "label": "EMERGENCY STOP",
+        "tooltip": "Immediately stop all irrigation systems",
+        "color": "white",
+        "bgcolor": "#d32f2f",
+        "icon": "fa-stop",
+        "payload": "emergency",
+        "payloadType": "str",
+        "topic": "agrosense/system/mode",
+        "x": 190,
+        "y": 1080,
+        "wires": [
+            [
+                "27b323454ec99fbd",
+                "4a855d0eec3c118f"
+            ]
+        ]
+    },
+    {
+        "id": "094a90e21f118729",
+        "type": "ui_button",
+        "z": "a48e96e73e0d8ced",
+        "name": "System Reset",
+        "group": "control_settings_group",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "RESET TO AUTO",
+        "tooltip": "Reset system to automatic mode",
+        "color": "white",
+        "bgcolor": "#4CAF50",
+        "className": "",
+        "icon": "fa-refresh",
+        "payload": "auto",
+        "payloadType": "str",
+        "topic": "agrosense/system/mode",
+        "topicType": "str",
+        "x": 180,
+        "y": 1120,
+        "wires": [
+            [
+                "27b323454ec99fbd"
+            ]
+        ]
+    },
+    {
+        "id": "4a855d0eec3c118f",
+        "type": "ui_toast",
+        "z": "a48e96e73e0d8ced",
+        "position": "top right",
+        "displayTime": "10",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Emergency Alert",
+        "x": 460,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "f8ed94171581585f",
+        "type": "ui_button",
+        "z": "a48e96e73e0d8ced",
+        "name": "Export Data",
+        "group": "control_settings_group",
+        "order": 8,
+        "width": 4,
+        "height": 1,
+        "label": "EXPORT DATA",
+        "tooltip": "Export historical sensor data to CSV",
+        "color": "white",
+        "bgcolor": "#2196F3",
+        "icon": "fa-download",
+        "payload": "export",
+        "payloadType": "str",
+        "topic": "agrosense/system/export",
+        "x": 210,
+        "y": 1160,
+        "wires": [
+            [
+                "075b6fc178865944"
+            ]
+        ]
+    },
+    {
+        "id": "075b6fc178865944",
+        "type": "function",
+        "z": "a48e96e73e0d8ced",
+        "name": "Data Export Handler",
+        "func": "// Create CSV export functionality\nvar exportData = {\n    timestamp: new Date().toISOString(),\n    main_temperature: flow.get('main_temperature') || 0,\n    main_humidity: flow.get('main_humidity') || 0,\n    main_soil_moisture: flow.get('main_soil_moisture') || 0,\n    main_light_level: flow.get('main_light_level') || 0,\n    remote_temperature: flow.get('remote_temperature') || 0,\n    remote_humidity: flow.get('remote_humidity') || 0,\n    remote_soil_moisture: flow.get('remote_soil_moisture') || 0,\n    main_irrigation_status: flow.get('main_irrigation_active') || false,\n    remote_irrigation_status: flow.get('remote_irrigation_active') || false\n};\n\n// Format as CSV\nvar csvHeader = 'Timestamp,Main_Temp,Main_Humidity,Main_Soil,Main_Light,Remote_Temp,Remote_Humidity,Remote_Soil,Main_Irrigation,Remote_Irrigation\\n';\nvar csvRow = `${exportData.timestamp},${exportData.main_temperature},${exportData.main_humidity},${exportData.main_soil_moisture},${exportData.main_light_level},${exportData.remote_temperature},${exportData.remote_humidity},${exportData.remote_soil_moisture},${exportData.main_irrigation_status},${exportData.remote_irrigation_status}\\n`;\n\nmsg.payload = csvHeader + csvRow;\nmsg.filename = `agrosense_data_${new Date().toISOString().split('T')[0]}.csv`;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 460,
+        "y": 1220,
+        "wires": [
+            [
+                "e6804d115164be4c"
+            ]
+        ]
+    },
+    {
+        "id": "e6804d115164be4c",
+        "type": "ui_toast",
+        "z": "a48e96e73e0d8ced",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Export Complete",
+        "x": 750,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "bd60e94efb9e11a6",
+        "type": "ui_chart",
+        "z": "a48e96e73e0d8ced",
+        "name": "Remote Light Level History",
+        "group": "",
+        "order": 5,
+        "width": 12,
+        "height": 3,
+        "label": "Remote Light Level Trends (Lux)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "No Light Data",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": 24,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#FFC107",
+            "#FF9800",
+            "#FF5722",
+            "#4CAF50",
+            "#2196F3"
+        ],
+        "outputs": 1,
+        "x": 720,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c4c4e671cd5b67e",
+        "type": "ui_template",
+        "z": "a48e96e73e0d8ced",
+        "group": "control_settings_group",
+        "name": "System Alerts",
+        "order": 10,
+        "width": 12,
+        "height": 4,
+        "format": "<div id='alerts-container' style='background:#fff3cd; border:1px solid #ffeaa7; border-radius:8px; padding:15px; margin:10px 0;'>\n  <h4 style='color:#856404; margin:0 0 10px 0;'><i class='fa fa-exclamation-triangle'></i> System Alerts</h4>\n  <div id='alert-list'>\n    <div class='alert-item' style='padding:5px 0; border-bottom:1px solid #ffeaa7; color:#856404;'>\n      <i class='fa fa-info-circle'></i> System operational - All sensors active\n    </div>\n    <div class='alert-item' style='padding:5px 0; border-bottom:1px solid #ffeaa7; color:#856404;'>\n      <i class='fa fa-wifi'></i> LoRa connection to remote field: Strong signal\n    </div>\n    <div class='alert-item' style='padding:5px 0; color:#856404;'>\n      <i class='fa fa-clock-o'></i> Last data sync: {{msg.payload.last_sync || 'Just now'}}\n    </div>\n  </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 480,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98655233da20e401",
+        "type": "ui_template",
+        "z": "a48e96e73e0d8ced",
+        "group": "control_settings_group",
+        "name": "Performance Metrics",
+        "order": 11,
+        "width": 12,
+        "height": 7,
+        "format": "<div style='background:#f8f9fa; border:1px solid #dee2e6; border-radius:10px; padding:20px;'>\n  <h4 style='color:#495057; margin:0 0 15px 0; text-align:center;'><i class='fa fa-line-chart'></i> System Performance Metrics</h4>\n  \n  <div style='display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:15px;'>\n    <div style='background:white; padding:15px; border-radius:8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align:center;'>\n      <div style='color:#28a745; font-size:24px; font-weight:bold;'>98.5%</div>\n      <div style='color:#6c757d; font-size:14px;'>System Uptime</div>\n      <div style='color:#28a745; font-size:12px; margin-top:5px;'><i class='fa fa-arrow-up'></i> Excellent</div>\n    </div>\n    \n    <div style='background:white; padding:15px; border-radius:8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align:center;'>\n      <div style='color:#007bff; font-size:24px; font-weight:bold;'>-15%</div>\n      <div style='color:#6c757d; font-size:14px;'>Water Usage</div>\n      <div style='color:#28a745; font-size:12px; margin-top:5px;'><i class='fa fa-arrow-down'></i> Optimized</div>\n    </div>\n    \n    <div style='background:white; padding:15px; border-radius:8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align:center;'>\n      <div style='color:#fd7e14; font-size:24px; font-weight:bold;'>2.3km</div>\n      <div style='color:#6c757d; font-size:14px;'>LoRa Range</div>\n      <div style='color:#28a745; font-size:12px; margin-top:5px;'><i class='fa fa-signal'></i> Strong</div>\n    </div>\n    \n    <div style='background:white; padding:15px; border-radius:8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align:center;'>\n      <div style='color:#6f42c1; font-size:24px; font-weight:bold;'>847</div>\n      <div style='color:#6c757d; font-size:14px;'>Data Points/Day</div>\n      <div style='color:#28a745; font-size:12px; margin-top:5px;'><i class='fa fa-check'></i> Active</div>\n    </div>\n  </div>\n  \n  <div style='margin-top:15px; padding:10px; background:#e7f3ff; border-radius:5px; font-size:12px; color:#0066cc;'>\n    <i class='fa fa-info-circle'></i> <strong>System Health:</strong> All components operating within normal parameters. Last maintenance: 5 days ago.\n  </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 760,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "879bee25df9fff8e",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "",
+        "topic": "agrosense_f5d65f65sd56/test",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f5a0a27d4c4c8541",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 1340,
+        "wires": [
+            [
+                "356abcc0e188d1e8"
+            ]
+        ]
+    },
+    {
+        "id": "356abcc0e188d1e8",
+        "type": "debug",
+        "z": "a48e96e73e0d8ced",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "47f3b7f8c715a164",
+        "type": "debug",
+        "z": "a48e96e73e0d8ced",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "72bda19662cb9bda",
+        "type": "debug",
+        "z": "a48e96e73e0d8ced",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "1cae9d4a269df1a8",
+        "type": "debug",
+        "z": "a48e96e73e0d8ced",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "9973a60bb54a5b9e",
+        "type": "debug",
+        "z": "a48e96e73e0d8ced",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "f4dcc6fb2b6430dc",
+        "type": "debug",
+        "z": "a48e96e73e0d8ced",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "90a001bfec069920",
+        "type": "debug",
+        "z": "a48e96e73e0d8ced",
+        "name": "valve",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "87763ac88cecae3e",
+        "type": "ui_text",
+        "z": "a48e96e73e0d8ced",
+        "group": "remote_overview_group",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Date-Time: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 410,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4f09e2ec2d211436",
+        "type": "mqtt in",
+        "z": "a48e96e73e0d8ced",
+        "name": "Date Time",
+        "topic": "agrosense_f5d65f65sd56/remote/date_time",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "1610e3fedb4224ba",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "87763ac88cecae3e"
+            ]
+        ]
+    },
+    {
+        "id": "b83346c047b427b0",
+        "type": "ui_spacer",
+        "z": "a48e96e73e0d8ced",
+        "name": "spacer",
+        "group": "control_settings_group",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ec240eecf06de1e5",
+        "type": "ui_spacer",
+        "z": "a48e96e73e0d8ced",
+        "name": "spacer",
+        "group": "control_settings_group",
+        "order": 7,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "39cff9c187f642cc",
+        "type": "ui_spacer",
+        "z": "a48e96e73e0d8ced",
+        "name": "spacer",
+        "group": "control_settings_group",
+        "order": 9,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "731d3cc006c855ef",
+        "type": "ui_spacer",
+        "z": "a48e96e73e0d8ced",
+        "name": "spacer",
+        "group": "remote_sensors_group",
+        "order": 3,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "c8583e6b304c9133",
+        "type": "ui_spacer",
+        "z": "a48e96e73e0d8ced",
+        "name": "spacer",
+        "group": "main_sensors_group",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "05b73ab6fca1908b",
+        "type": "ui_spacer",
+        "z": "a48e96e73e0d8ced",
+        "name": "spacer",
+        "group": "main_sensors_group",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f5a0a27d4c4c8541",
+        "type": "mqtt-broker",
+        "name": "test.mosquitto.org",
+        "broker": "test.mosquitto.org",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "main_sensors_group",
+        "type": "ui_group",
+        "name": "Environmental Sensors",
+        "tab": "agrosense_main_tab",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "main_irrigation_group",
+        "type": "ui_group",
+        "name": "Irrigation Status",
+        "tab": "agrosense_main_tab",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "remote_sensors_group",
+        "type": "ui_group",
+        "name": "Remote Sensors",
+        "tab": "agrosense_remote_tab",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "85e624c30af964f4",
+        "type": "ui_group",
+        "name": "Remote Irrigation",
+        "tab": "agrosense_remote_tab",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "control_main_group",
+        "type": "ui_group",
+        "name": "Main Farm Control",
+        "tab": "agrosense_control_tab",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "control_remote_group",
+        "type": "ui_group",
+        "name": "Remote Field Control",
+        "tab": "agrosense_control_tab",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "control_settings_group",
+        "type": "ui_group",
+        "name": "System Settings",
+        "tab": "agrosense_control_tab",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "main_overview_group",
+        "type": "ui_group",
+        "name": "System Overview",
+        "tab": "agrosense_main_tab",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "remote_overview_group",
+        "type": "ui_group",
+        "name": "Remote Field Overview",
+        "tab": "agrosense_remote_tab",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "1610e3fedb4224ba",
+        "type": "mqtt-broker",
+        "name": "test.mosquitto.org",
+        "broker": "test.mosquitto.org",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "agrosense_main_tab",
+        "type": "ui_tab",
+        "name": "AgroSense Main Farm",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "agrosense_remote_tab",
+        "type": "ui_tab",
+        "name": "Remote Field",
+        "icon": "fa-map-marker",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "agrosense_control_tab",
+        "type": "ui_tab",
+        "name": "System Control",
+        "icon": "fa-cogs",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    }
+]
